@@ -231,10 +231,11 @@ rules:
   - RULE-SET,google,谷歌
   - RULE-SET,proxy,境外
   # IP 地址规则
-  - RULE-SET,telegramcidr,no-resolve电报
-  - RULE-SET,lancidr,no-resolve私有
-  - RULE-SET,cncidr,no-resolve境内
-  - GEOIP,LAN,no-resolve私有
-  - GEOIP,CN,no-resolve境内
+  - RULE-SET,telegramcidr,电报
+  - RULE-SET,lancidr,私有
+  - RULE-SET,cncidr,境内
+  - GEOIP,LAN,私有
+  - GEOIP,CN,境内
+  - no-resolve
   # 兜底规则
   - MATCH,漏网之鱼
